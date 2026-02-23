@@ -259,14 +259,14 @@ function Hero({data,onEdit}){
             background:"radial-gradient(circle,rgba(124,111,255,.5) 0%,rgba(255,107,138,.2) 60%,transparent 80%)",
             animation:"glowPulse 3s ease-in-out infinite",filter:"blur(8px)"}}/>
           <div style={{position:"relative",width:180,height:180,borderRadius:"50%",
-            background:"linear-gradient(135deg,#7c6fff 0%,#c850c0 50%,#ff6b8a 100%)",
-            boxShadow:"0 0 50px 15px rgba(124,111,255,.4),0 0 100px 30px rgba(255,107,138,.15)",
-            animation:"float 3.5s ease-in-out infinite",
-            display:"flex",alignItems:"center",justifyContent:"center",
-            fontSize:72,userSelect:"none"}}>
-            <div style={{position:"absolute",inset:0,borderRadius:"50%",
-              background:"radial-gradient(circle at 35% 30%,rgba(255,255,255,.25),transparent 65%)"}}/>
-          </div>
+  boxShadow:"0 0 50px 15px rgba(124,111,255,.4),0 0 100px 30px rgba(255,107,138,.15)",
+  animation:"float 3.5s ease-in-out infinite",overflow:"hidden"}}>
+  <img 
+    src="YOUR_IMAGE_URL_HERE" 
+    alt="Rutuja Jadhav"
+    style={{width:"100%",height:"100%",objectFit:"cover",borderRadius:"50%"}}
+  />
+</div>
         </div>
       </div>
       <h1 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(2.4rem,7vw,3.8rem)",
