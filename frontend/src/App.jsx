@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import rutujaImg from "./assets/rutuja.jpg"; 
 
 /* ─── Global CSS ─────────────────────────────────────────────────── */
 const CSS = `
@@ -253,22 +254,22 @@ function Hero({data,onEdit}){
       backgroundImage:"linear-gradient(rgba(124,111,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(124,111,255,.03) 1px,transparent 1px)",
       backgroundSize:"60px 60px"}}/>
     <div style={{position:"relative",zIndex:1,maxWidth:640,width:"100%"}}>
-      <div style={{display:"flex",justifyContent:"center",marginBottom:36,animation:"fadeUp .8s .05s ease both"}}>
-        <div style={{position:"relative",display:"inline-block"}}>
-          <div style={{position:"absolute",inset:-12,borderRadius:"50%",
-            background:"radial-gradient(circle,rgba(124,111,255,.5) 0%,rgba(255,107,138,.2) 60%,transparent 80%)",
-            animation:"glowPulse 3s ease-in-out infinite",filter:"blur(8px)"}}/>
-          <div style={{position:"relative",width:180,height:180,borderRadius:"50%",
-  boxShadow:"0 0 50px 15px rgba(124,111,255,.4),0 0 100px 30px rgba(255,107,138,.15)",
-  animation:"float 3.5s ease-in-out infinite",overflow:"hidden"}}>
-  <img 
-    src=" https://drive.google.com/file/d/1jC1ch6OOHKPxzWakv82R9NAex__3wYoZ/view?usp=sharing" 
-    alt="Rutuja Jadhav"
-    style={{width:"100%",height:"100%",objectFit:"cover",borderRadius:"50%"}}
-  />
-</div>
-        </div>
-      </div>
+     <div style={{display:"flex",justifyContent:"center",marginBottom:36,animation:"fadeUp .8s .05s ease both"}}>
+  <div style={{position:"relative",display:"inline-block"}}>
+    <div style={{position:"absolute",inset:-12,borderRadius:"50%",
+      background:"radial-gradient(circle,rgba(124,111,255,.5) 0%,rgba(255,107,138,.2) 60%,transparent 80%)",
+      animation:"glowPulse 3s ease-in-out infinite",filter:"blur(8px)"}}/>
+    <div style={{position:"relative",width:220,height:220,borderRadius:"50%",
+      boxShadow:"0 0 50px 15px rgba(124,111,255,.4),0 0 100px 30px rgba(255,107,138,.15)",
+      animation:"float 3.5s ease-in-out infinite",overflow:"hidden"}}>
+      <img 
+        src={rutujaImg}
+        alt="Rutuja Jadhav"
+        style={{width:"100%",height:"100%",objectFit:"cover",borderRadius:"50%"}}
+      />
+    </div>       {/* ← closes the 220x220 div */}
+  </div>         {/* ← closes display:inline-block div */}
+</div>           {/* ← closes justifyContent:center div */}
       <h1 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(2.4rem,7vw,3.8rem)",
         fontWeight:800,lineHeight:1.05,marginBottom:10,marginTop:20,
         animation:"fadeUp .8s .18s ease both",color:"var(--text)",opacity:1,display:"block",textAlign:"center"}}>
