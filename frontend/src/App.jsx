@@ -262,7 +262,7 @@ function Hero({data,onEdit}){
   boxShadow:"0 0 50px 15px rgba(124,111,255,.4),0 0 100px 30px rgba(255,107,138,.15)",
   animation:"float 3.5s ease-in-out infinite",overflow:"hidden"}}>
   <img 
-    src="YOUR_IMAGE_URL_HERE" 
+    src=" https://drive.google.com/file/d/1jC1ch6OOHKPxzWakv82R9NAex__3wYoZ/view?usp=sharing" 
     alt="Rutuja Jadhav"
     style={{width:"100%",height:"100%",objectFit:"cover",borderRadius:"50%"}}
   />
